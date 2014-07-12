@@ -58,7 +58,7 @@
         </point>
     </spawn>
     <spawn team="red" kit="red">
-        <point yaw="180"
+        <point yaw="180">
             <cylinder base="-17,2,46" radius="1" height="0"/>
         </point>
     </spawn>
