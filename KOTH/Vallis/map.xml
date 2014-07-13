@@ -1,0 +1,105 @@
+<?xml version="1.0"?>
+<map proto="1.3.3">
+<name>Vallis</name>
+<version>1.0.0</version>
+<objective>Control the hills, the first team to 500 points wins!</objective>
+
+<authors>
+    <author>Kyuhl</author>
+    <author>CakePvP</author>
+</authors>
+
+<teams>
+    <team color="green" max="20">Lime Team</team>
+    <team color="dark green" max="20">Green Team</team>
+</teams>
+
+<spawns>
+    <spawn team="lime" yaw="90" kit="lime">
+        <cylinder base="" radius="2" height="0"/>
+    </spawn>
+    <spawn team="green"  yaw="-90" kit="green">
+        <cylinder base="" radius="2" height="0"/>
+    </spawn>
+    <default yaw="90">
+        <cylinder base="209.5,85,374.5" radius="3" height="0"/>
+    </default>
+</spawns>
+
+<kits>
+    <kit name="spawn">
+        <item slot="0">stone sword</item>
+        <item slot="1">bow</item>
+        <item slot="3" amount="32">golden carrot</item>
+        <item slot="4">golden apple</item>
+        <item slot="9" amount="32">arrow</item>
+    </kit>
+    <kit name="lime" parents="spawn">
+        <helmet color="7FCC19" damage="-3000">leather helmet</helmet>
+        <chestplate color="7FCC19" damage="-3000">leather chestplate</chestplate>
+        <leggings damage="-3000">iron leggings</leggings>
+        <boots color="7FCC19" damage="-3000">leather boots</boots>
+    </kit>
+    <kit name="green" parents="spawn">
+        <helmet color="667F33" damage="-3000">leather helmet</helmet>
+        <chestplate color="667F33" damage="-3000">leather chestplate</chestplate>
+        <leggings damage="-3000">iron leggings</leggings>
+        <boots color="667F33" damage="-3000">leather boots</boots>
+    </kit>
+</kits>
+
+<filters>
+    <filter name="deny-lime">
+        <deny>
+            <team>lime</team>
+        </deny>
+    </filter>
+    <filter name="deny-green">
+        <deny>
+            <team>green</team>
+        </deny>
+    </filter>
+</filters>
+
+<regions>
+    <apply block="deny-all">
+        <rectangle min="-oo,-oo" max="oo,oo"/>
+    </apply>
+    <apply enter="deny-lime" message="`7You may not enter the `2Green Team `7spawn area!">
+        <rectangle name="green-spawn" min="" max=""/>
+    </apply>
+    <apply enter="deny-green" message="`7You may not enter the `aLime Team `7spawn area!">
+        <rectangle name="lime-spawn" min="" max=""/>
+    </apply>
+</regions>
+
+<king>
+    <hills>
+        <!-- ### Need this to be completed ### -->
+    </hills>
+</king>
+
+<score>
+    <limit>500</limit>
+    <king/>
+</score>
+
+<timelock>on</timelock>
+
+<toolrepair>
+    <tool>stone sword</tool>
+    <tool>bow</tool>
+</toolrepair>
+
+<itemremove>
+    <item>leather helmet</item>
+    <item>leather chestplate</item>
+    <item>iron leggings</item>
+    <item>leather boots</item>
+    <item>golden carrot</item>
+</itemremove>
+
+<killreward>
+    <item>golden apple</item>
+</killreward>
+</map>
