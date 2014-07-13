@@ -5,8 +5,8 @@
 <objective>Control the hills, the first team to 500 points wins!</objective>
 
 <authors>
-    <author>Kyuhl</author>
-    <author>CakePvP</author>
+    <author contribution="Building, XML">Kyuhl</author>
+    <author contribution="Building">CakePvP</author>
 </authors>
 
 <teams>
