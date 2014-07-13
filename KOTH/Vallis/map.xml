@@ -15,11 +15,11 @@
 </teams>
 
 <spawns>
-    <spawn team="lime" yaw="90" kit="lime">
-        <cylinder base="" radius="2" height="0"/>
+    <spawn team="lime" yaw="0" kit="lime">
+        <cylinder base="164.5,33,225.5" radius="2" height="0"/>
     </spawn>
     <spawn team="green"  yaw="-90" kit="green">
-        <cylinder base="" radius="2" height="0"/>
+        <cylinder base="165.5,33,522.5" radius="2" height="0"/>
     </spawn>
     <default yaw="90">
         <cylinder base="209.5,85,374.5" radius="3" height="0"/>
@@ -33,6 +33,7 @@
         <item slot="3" amount="32">golden carrot</item>
         <item slot="4">golden apple</item>
         <item slot="9" amount="32">arrow</item>
+        <potion duration="5" amplifier="3">damage resistance</potion>
     </kit>
     <kit name="lime" parents="spawn">
         <helmet color="7FCC19" damage="-3000">leather helmet</helmet>
@@ -66,10 +67,10 @@
         <rectangle min="-oo,-oo" max="oo,oo"/>
     </apply>
     <apply enter="deny-lime" message="`7You may not enter the `2Green Team `7spawn area!">
-        <rectangle name="green-spawn" min="" max=""/>
+        <rectangle name="green-spawn" min="170,512" max="161,512"/>
     </apply>
     <apply enter="deny-green" message="`7You may not enter the `aLime Team `7spawn area!">
-        <rectangle name="lime-spawn" min="" max=""/>
+        <rectangle name="lime-spawn" min="159,235" max="168,235"/>
     </apply>
 </regions>
 
