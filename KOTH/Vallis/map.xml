@@ -10,8 +10,8 @@
 </authors>
 
 <teams>
-    <team color="green" max="20">Lime Team</team>
-    <team color="dark green" max="20">Green Team</team>
+    <team color="green" max="25">Lime Team</team>
+    <team color="dark green" max="25">Green Team</team>
 </teams>
 
 <spawns>
