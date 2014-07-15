@@ -18,7 +18,7 @@
 </teams>
 
 <kits>
-    <kit name="spawn">
+    <kit name="spawn" force="true">
         <item slot="0" enchantment="arrow damage:10;damage all:10">bow</item>
         <item slot="1">arrow</item>
         <helmet>iron helmet</helmet>
@@ -31,6 +31,18 @@
         <chestplate color="8f8f8f">leather chestplate</chestplate>
     </kit>
 </kits>
+
+<spawns>
+    <default yaw="-180">
+        <cuboid min="-235,15,-82" max="-234,15,-82"/>
+    </default>
+    <spawn team="blue" kit="blue" yaw="180">
+        <cuboid min="-234,12,-152" max="-235,12,-151"/>
+    </spawn>
+    <spawn team="orange" kit="orange" yaw="-180">
+        <cuboid min="-232,12,-12" max="-231,12,-13"/>
+    </spawn>
+</spawns>
 
 <modifybowprojectile>
     <potion duration="2" amplifier="1">blindness</potion>
