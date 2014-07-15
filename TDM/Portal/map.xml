@@ -13,9 +13,39 @@
 </contributors>
 
 <teams>
-   <team color="light blue" max="12" max-overfill="14">Blue Team</team>
-   <team color="gold" max="12" max-overfill="14">Orange Team</team>
+    <team color="light blue" max="12" max-overfill="14">Blue Team</team>
+    <team color="gold" max="12" max-overfill="14">Orange Team</team>
 </teams>
+
+<kits>
+    <kit name="spawn">
+        <item slot="0" enchantment="arrow damage:10;damage all:10">bow</item>
+        <item slot="1">arrow</item>
+        <helmet>iron helmet</helmet>
+        <potion duration="5" amplifier="25" ambient="true">damage resistance</potion>
+    </kit>
+    <kit name="blue" parents="spawn">
+        <chestplate color="8f8f8f">leather chestplate</chestplate>
+    </kit>
+    <kit name="orange" parents="spawn">
+        <chestplate color="8f8f8f">leather chestplate</chestplate>
+    </kit>
+</kits>
+
+<modifybowprojectile>
+    <potion duration="2" amplifier="1">blindness</potion>
+</modifybowprojectile>
+
+<toolrepair>
+    <tool>bow</tool>
+</toolrepair>
+
+<itemremove>
+    <item>arrow</item>
+    <item>glass bottle</item>
+    <item>iron helmet</item>
+    <item>leather chestplate</item>
+</itemremove>
 
 <rage />
 </map>
