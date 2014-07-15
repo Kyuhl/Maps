@@ -59,5 +59,20 @@
     <item>leather chestplate</item>
 </itemremove>
 
+<disabledamage>
+    <damage>fall</damage>
+</disabledamage>
+
+<killreward>
+    <item>arrow</item>
+</killreward>
+
+<hunger>
+<depletion>off</depletion>
+</hunger>
+
+<timelock>on</timelock>
+
 <rage />
+<autorespawn />
 </map>
