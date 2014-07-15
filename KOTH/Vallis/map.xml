@@ -81,73 +81,46 @@
 
 
 <king>
-
-    
     <hills>
-    
         <!-- Center Hill -->
         <hill name="Center" capture-time="10s" points="1">
             <capture>
                 <cylinder base="164,56,374" radius="4" height="1"/>
             </capture>
-                
             <progress>
                 <cuboid min="167,56,371" max ="161,56,377" />
             </progress>
-            
             <captured>
                 <cuboid min="0,0,0" max="0,0,0"/>
-                <!-- Do NOT change the cuboid, this needs to be like that :) -->
             </captured>
-                
-            
-            
         </hill>
         
-        
         <!-- South hill -->
-        
         <hill name="South" capture-time="10s" points="1">
-        
             <capture>
                 <cylinder base="146,47,445" radius="3" height="1" />
             </capture>
-        
             <progress>
                 <cuboid min="144,47,443" max="148,47,447" />
             </progress>
-        
             <captured>
                 <cuboid min="0,0,0" max="0,0,0"/>
-                <!-- Do NOT change the cuboid, this needs to be like that :) -->
             </captured>        
-            
+        </hill>    
         
         <!-- North hill -->    
-            
-        </hill>
-        
         <hill name="North" capture-time="10s" points="1">
-        
             <capture>
                 <cylinder base="183,47,302" radius="3" height="1" />
             </capture>
-            
             <progress>
                 <cuboid min="181,47,300" max="185,47,304" />
             </progress>
-            
             <captured>
                 <cuboid min="0,0,0" max="0,0,0"/>
-                <!-- Do NOT change the cuboid, this needs to be like that :) -->
             </captured>  
-            
-            
-            
         </hill>
-        
     </hills>
-    
 </king>
 
 
